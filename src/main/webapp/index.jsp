@@ -28,14 +28,14 @@
         <tr>
             <th scope="row">1</th>
             <td>Numero Mes 1</td>
-            <td><a href="#">Factorial de 1</a></td>
-            <td><a href="#">¿Es par o Impar el numero 1?</a></td>
+            <td><a href="FacFibonacci.jsp">Factorial de 1</a></td>
+            <td><a href="parImpar.jsp">¿Es par o Impar el numero 1?</a></td>
         </tr>
         <tr>
             <th scope="row">2</th>
             <td>Numero Mes 2</td>
-            <td><a href="#">Factorial de 2</a></td>
-            <td><a href="#">¿Es par o Impar el numero 2?</a></td>
+            <td><a href="FacFibonacci.jsp">Factorial de 2</a></td>
+            <td><a href="parImpar.jsp">¿Es par o Impar el numero 2?</a></td>
         </tr>
         <tr>
             <th scope="row">3</th>
