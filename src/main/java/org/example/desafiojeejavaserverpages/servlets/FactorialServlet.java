@@ -3,6 +3,7 @@ package org.example.desafiojeejavaserverpages.servlets;
 import java.io.IOException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
+import org.example.desafiojeejavaserverpages.util.GeneralUtilities;
 
 @WebServlet(name = "FactorialServlet", value = "/FactorialServlet")
 public class FactorialServlet extends HttpServlet {
@@ -16,7 +17,8 @@ public class FactorialServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String numParam = request.getParameter("num");
         int num = Integer.parseInt(numParam);
-        int result = factorial(num);
+        GeneralUtilities util = new GeneralUtilities();
+        int result = util.factFibonacci(num);
 
         response.setContentType("text/html");
         response.getWriter().append("<html><body>");

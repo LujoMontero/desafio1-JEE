@@ -7,7 +7,7 @@ public class GenerarTablas {
         public String generateTable() {
             StringBuilder table = new StringBuilder();
 
-            for (int i = 1; i <= 10; i++) {
+            for (int i = 0; i <= 10; i++) {
                 table.append("<tr>");
                 table.append("<th scope=\"row\">").append(i).append("</th>");
                 table.append("<td>Numero Mes ").append(i).append("</td>");

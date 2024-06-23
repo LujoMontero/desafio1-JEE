@@ -3,6 +3,7 @@ package org.example.desafiojeejavaserverpages.servlets;
 import java.io.IOException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
+import org.example.desafiojeejavaserverpages.util.GeneralUtilities;
 
 @WebServlet(name = "ParImparServlet", value = "/ParImparServlet")
 public class ParImparServlet extends HttpServlet {
@@ -16,7 +17,8 @@ public class ParImparServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String numParam = request.getParameter("num");
         int num = Integer.parseInt(numParam);
-        String result = (num % 2 == 0) ? "par" : "impar";
+        GeneralUtilities util = new GeneralUtilities();
+        String result = util.esParOImpar(num);
 
         response.setContentType("text/html");
         response.getWriter().append("<html><body>");
